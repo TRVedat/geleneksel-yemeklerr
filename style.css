@@ -1,41 +1,91 @@
-*{
-    margin: 0;
-    padding: 0;
-  }
-  
-  ul {
-    /* Bu üç özellik liste elemanları şekillendirilebilir */
-    /* list-style-type:square;
-      list-style-position:inside;
-      list-style-image: url("./images/Food-Dome-icon.png"); */
-  
-    /* list-style:square inside url(./images/Food-Dome-icon.png); */
-  
-    list-style: none;
-    background-color: black;
-    color: white;
-    padding: 10px;
-  }
-  
-  li {
-    display: inline;
-    padding: 10px;
-  }
-  
-  /* Liste elemanıa emoji gibi unicode karakteri eklemek */
-  
-  /* ul li::before{
-      content:"💖";
-      font-size: 35px;
-  } */
-  
-  .baslik{
-      background-color:brown;
-      font-family: 'Oswald', sans-serif;
-    
-  }
-  
-  img{
-      height: 600px;
-      width: 100%;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  /* border:2px solid red; */
+}
+
+ul {
+  /* Bu üç özellik liste elemanları şekillendirilebilir */
+  /* list-style-type:square;
+    list-style-position:inside;
+    list-style-image: url("./images/Food-Dome-icon.png"); */
+
+  /* list-style:square inside url(./images/Food-Dome-icon.png); */
+
+  list-style: none;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+li {
+  display: inline;
+  padding: 10px;
+}
+
+/* Liste elemanıa emoji gibi unicode karakteri eklemek */
+
+/* ul li::before{
+    content:"💖";
+    font-size: 35px;
+} */
+
+.baslik {
+  background-color: brown;
+  font-family: "Oswald", sans-serif;
+
+  top: 1px;
+  position: sticky;
+
+  width: 100%;
+  margin: 5px auto;
+}
+
+img {
+  height: 300px;
+  width: 100%;
+}
+
+.tarif {
+  height: 250px;
+  width: 300px;
+  border: 3px solid gray;
+  margin: 5px;
+
+  border-bottom-left-radius: 40px;
+  border-top-right-radius: 40px;
+  /* border-radius: 20px; */
+  /* border radius 50% verilirse yuvarlak olmasını sağlar */
+}
+.yemekler {
+  /* position:relative; */
+
+  /* Sayfa içinde ortalama için margin ile auto kullanılabilir.Bunun için önce width özelliği vermeliyiz.*/
+  width: 1000px;
+  margin: 10px auto;
+}
+/* 
+.resim1{
+ 
+ margin-left:30px;
+}
+
+.resim2{
+  /* position:absolute; 
+  margin-left:10px;
+} */
+a {
+  display: block;
+  text-decoration: none;
+
+}
+
+a:link {
+  color: red;
+}
+
+a:hover{
+  background-color:aquamarine;
+  padding:4px;
+  border:3px solid red;
+}
